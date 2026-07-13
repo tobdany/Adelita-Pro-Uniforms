@@ -1,4 +1,3 @@
-/*Importamos las tipografías con clases*/
 .sail-regular {
     font-family: "Sail", system-ui;
     font-weight: 400;
@@ -8,22 +7,22 @@
 .nunito {
     font-family: "Nunito", sans-serif;
     font-optical-sizing: auto;
-    font-weight: /*weight*/;
+    font-weight: 400;
     font-style: normal;
 }
 
 /*Identificamos la paleta de colores*/
-:root{ 
-    --color-primario: (137, 2, 62); /*Bugambilia*/
-    --color-secundario: (234, 99, 140); /*rosa*/
-    --color-terciario: (255, 217, 218); /*rosa muy claro*/
-    --color-cuaternario: (48, 52, 63); /*gris*/
-    --color-texto: (27, 32, 33); /*negro*/
+:root {
+    --color-primario: rgb(137, 2, 62);
+    --color-secundario: rgb(234, 99, 140);
+    --color-terciario: rgb(255, 217, 218);
+    --color-cuaternario: rgb(48, 52, 63);
+    --color-texto: rgb(27, 32, 33);
 }
 
 /*Animación para el scrolleo suave*/
-html{
-    scroll-behavior: smooth; 
+html {
+    scroll-behavior: smooth;
 }
 
 /*Propuesta de tamaño para los contenedores*/
@@ -31,4 +30,136 @@ html{
     max-width: 1100px;
     margin: 0 auto;
     padding: 0 24px;
+}
+
+
+body {
+    background-color: var(--color-cuaternario);
+    min-height: 100vh;
+    margin: 0;
+}
+
+
+/********************/
+/*SECCIÓN DEL NAVBAR*/
+.adelita-header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.3rem 10%;
+    /*background: rgba(255, 255, 255, 0.05); color del cristal*/
+    background: var(--color-primario);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 95px !important;
+    max-height: 170px;
+    width: auto;
+}
+
+.navbar a {
+    font-size: 1.1rem;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 2.5rem;
+    transition: .3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: var(--color-secundario);
+}
+
+#menu-icon {
+    font-size: 2.5rem;
+    color: #ffffff;
+    cursor: pointer;
+    display: none;
+
+}
+
+@media (max-width: 992px) {
+    .adelita-header {
+        padding: 1.25rem 4%;
+    }
+}
+
+@media (max-width: 768px) {
+    #menu-icon {
+        display: block;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 4%;
+        /*Para el efecto de cristal*/
+        background: rgba(255, 255, 255, 0.06);
+        backdrop-filter: blur(15px);
+        -webkit-backdrop-filter: blur(15px);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        border-top: 1px solid rgba(255, 255, 255, 0.05);
+
+        display: none;
+        flex-direction: column;
+    }
+
+    /* Clase que activa el JS para mostrar el menú */
+    .navbar.active {
+        /*display: block;*/
+        display: flex;
+    }
+
+    .navbar a {
+        display: block;
+        width: 100%;
+        font-size: 1.2rem;
+        margin: 1rem 0;
+        margin-left: 0;
+        text-align: center;
+    }
+}
+
+
+/********************/
+/*ESTILOS DEL FOOTER*/
+.adelita-footer {
+    background-color: var(--color-cuaternario);
+    color: var(--color-terciario);
+    padding: 20px 0;
+    margin-top: 50px;
+    text-align: center;
+}
+
+/* Espacio entre el texto y los iconos */
+.footer-contenido p {
+    margin-bottom: 10px;
+}
+
+/* Estilos para los iconos de Redes Sociales */
+.footer-redes a {
+    color: var(--color-terciario);
+    font-size: 1.5rem;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.footer-redes a:hover {
+    color: var(--color-secundario);
 }
