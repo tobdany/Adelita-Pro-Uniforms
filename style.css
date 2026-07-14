@@ -14,10 +14,10 @@
 
 /*Identificamos la paleta de colores*/
 :root{ 
-    --color-primario: (137, 2, 62); /*Bugambilia*/
-    --color-secundario: (234, 99, 140); /*rosa*/
-    --color-terciario: (255, 217, 218); /*rosa muy claro*/
-    --color-cuaternario: (48, 52, 63); /*gris*/
+    --color-primario: rgb(137, 2, 62); /*Bugambilia*/
+    --color-secundario: rgb(234, 99, 140); /*rosa*/
+    --color-terciario: rgb(255, 217, 218); /*rosa muy claro*/
+    --color-cuaternario: rgb(48, 52, 63); /*gris*/
     --color-texto: (27, 32, 33); /*negro*/
 }
 
