@@ -1,11 +1,11 @@
 # Adelita Pro Uniforms
-# Adelita Pro 🎽✨
+# Adelita Pro
 
 ¡Bienvenidas a **Adelita Pro**! Esta es la landing page oficial de nuestra marca, una propuesta innovadora dedicada a la creación y venta de **uniformes deportivos cómodos, estilizados y de alto rendimiento para mujeres**.
 
 ---
 
-## 🎯 Nuestra Inspiración: El Legado de la Adelita
+##  Nuestra Inspiración: El Legado de la Adelita
 
 Nuestra identidad de marca rinde homenaje a **la Adelita**, figura emblemática y pilar fundamental de la Revolución Mexicana. Más allá del mito y las canciones, las Adelitas (o soldaderas) fueron mujeres de un coraje inquebrantable que rompieron los moldes de su época:
 
@@ -16,20 +16,20 @@ En **Adelita Pro**, trasladamos ese legado de resistencia, fuerza y presencia hi
 
 ---
 
-## 👥 Equipo del Proyecto
+##  Equipo del Proyecto
 
 El desarrollo y la gestión de esta landing page se llevan a cabo bajo metodologías ágiles, contando con la participación activa de todo nuestro equipo:
 
-* **Tania Serrano** — Scrum Master 📋
-* **Alma Carmona** — Product Owner 👑
-* **Daniela Tobon** — Backend & Frontend Developer 🛠️
-* **Diana Hurtado** — Backend & Frontend Developer 🛠️
-* **Karem Reyes** — Backend & Frontend Developer 🛠️
-* **Joyce Martinez** — Backend & Frontend Developer 🛠️
+* **Tania Serrano** — Scrum Master 
+* **Alma Carmona** — Product Owner 
+* **Daniela Tobon** — Backend & Frontend Developer 
+* **Diana Hurtado** — Backend & Frontend Developer 
+* **Karem Reyes** — Backend & Frontend Developer 
+* **Joyce Martinez** — Backend & Frontend Developer 
 
 ---
 
-## 🛠️ Tecnologías Utilizadas
+## Tecnologías Utilizadas
 
 Para la construcción, maquetación e interactividad de la landing page, todo el equipo colaboró de forma integral utilizando el siguiente stack tecnológico base:
 
@@ -39,7 +39,7 @@ Para la construcción, maquetación e interactividad de la landing page, todo el
 
 ---
 
-## 🚀 Características Clave de la Landing Page
+## Características Clave de la Landing Page
 
 1. **Diseño Narrativo e Inspiracional:** Una interfaz visual que conecta la épica de las adelitas revolucionarias con los logros de las deportistas actuales.
 2. **Catálogo Estilizado:** Sección dedicada a mostrar uniformes diseñados para ofrecer libertad de movimiento, comodidad y alta costura deportiva.
