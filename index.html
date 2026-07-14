@@ -5,8 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adelita Pro | Pasión en movimiento</title>
     <!--Link a la página de estilos-->
-    <link real="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
     <!--Link a Bootstrap-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Sail&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 
@@ -27,10 +30,95 @@
         <!---->
     </div>
 
-    <div class="contenedor">
-        <h2>Apoyo emocional y lugares exclusivos</h2>
-        <!---->
+    <div>
+        <h2 class="sail-regular" style="background-color: var(--color-terciario); font-size: 65px;">Apoyo emocional y lugares exclusivos</h2>
+            <div id="espacio-mujeres-cdmx" class="sail-regular">
+                <!-- Encabezado de la sección -->
+                <div>
+                    <h2 class="sail-regular" style="background-color: var(--color-terciario); font-size: 40px;">Espacio Seguro para Ti</h2>
+                        <p>Tu bienestar es lo más importante. Aquí encontrarás recursos de apoyo emocional y lugares exclusivos para mujeres en la Ciudad de México.</p>
+                </div>
+            </div>
+                    <!-- Sección 1: Apoyo Emocional -->
+        <div class="apoyo-emocional">
+            <h3 class="sail-regular" style="background-color: var(--color-terciario); font-size: 40px;">Redes de Apoyo y Contención Emocional</h3>
+<div class="container mt-4">
+    
+    <div class="row">
+
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <img src="imagenesApoyo/locatel-logo-png_seeklogo-303649.png" class="card-img-top" alt="Logo Locatel" class="thumbnail">
+                <div class="card-body">
+                    <h5 class="card-title">Línea Mujeres-Locatel</h5>
+                    <p class="nunito card-text">Atención psicológica y legal gratuita. Llama al <em>*0311</em> o al <em>55 5658 1111</em>.</p>
+                    <a href="https://311locatel.cdmx.gob.mx/" class="card-link">Link a Locatel</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <img src="imagenesApoyo/lunas_cdmx-focus-0-0-1479-828.webp" class="card-img-top" alt="Logo Lunas">
+                <div class="card-body">
+                    <h5 class="nunito card-title">LUNAS (Centros de Atención Integral)</h5>
+                    <p class="card-text">Espacios de la Secretaría de las Mujeres para atención psicológica y empoderamiento en distintas alcaldías.</p>
+                    <a href="https://www.semujeres.cdmx.gob.mx/" class="card-link">Link a Lunas</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <img src="imagenesApoyo/logo.png" class="card-img-top" alt="Logo Consejo Ciudadano">
+                <div class="card-body">
+                    <h5 class="nunito card-title">Consejo Ciudadano (Línea de Seguridad)</h5>
+                    <p class="card-text">Apoyo psicológico 24/7. Llama o manda WhatsApp al <em>55 5533 5533</em>.</p>
+                    <a href="https://consejociudadanomx.org/" class="card-link">Link a Consejo Ciudadano</a>
+                </div>
+            </div>
+        </div>
+    </div> 
     </div>
+    <!-- Sección 2: Lugares Exclusivos / Seguros -->
+        <h2 class="sail-regular" style="background-color: var(--color-terciario); font-size: 40px;">Gymnacios, Bares y Talleres exclusivos para la CDMX</h2>
+    <div id="carouselExampleDark" class="carousel carousel-dark slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+            <img src="imagenesApoyo/gym.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="sail-regular" style="background-color: var(--color-terciario); font-size: 50px;">Gymnacios exclusivos para mujeres.</h5>
+                    <p class="nunito" style="background-color: var(--color-primario); font-size: 20px; color: var(--color-terciario);">Ven y sientete segura junto a otras mujeres dentro del mundo Fitness.</p>
+                </div>
+        </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="imagenesApoyo/bar.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="sail-regular" style="background-color: var(--color-terciario); font-size: 50px;">Bares exclusivos para mujeres.</h5>
+                            <p class="nunito" style="background-color: var(--color-primario); font-size: 20px; color: var(--color-terciario);">Ven a tomarte unos drinks con tus amigas en un ambiente exclusivo para mujeres.</p>
+                        </div>
+                    </div>
+                <div class="carousel-item">
+                    <img src="imagenesApoyo/taller.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="sail-regular" style="background-color: var(--color-terciario); font-size: 50px;">Talleres exclusivos para mujeres cerca de ti.</h5>
+                            <p class="nunito" style="background-color: var(--color-primario); font-size: 20px; color: var(--color-terciario);">Ven a pintar, hacer collage o cerámica mientras creas lazos con otras mujeres dentro del mundo del arte.</p>
+                        </div>
+                    </div>
+                </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+</div>
 
     <div class="contenedor">
         <h2>Pide tus uniformes personalizados</h2>
@@ -48,6 +136,7 @@
     
     <!--Segundo link de bootstrap:-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
 </body>
 
 </html>
