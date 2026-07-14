@@ -8,17 +8,17 @@
 .nunito {
     font-family: "Nunito", sans-serif;
     font-optical-sizing: auto;
-    font-weight: /*weight*/;
+    font-weight: 400;
     font-style: normal;
 }
 
 /*Identificamos la paleta de colores*/
 :root{ 
-    --color-primario: (137, 2, 62); /*Bugambilia*/
-    --color-secundario: (234, 99, 140); /*rosa*/
-    --color-terciario: (255, 217, 218); /*rosa muy claro*/
-    --color-cuaternario: (48, 52, 63); /*gris*/
-    --color-texto: (27, 32, 33); /*negro*/
+    --color-primario: rgb(137, 2, 62); /*Bugambilia*/
+    --color-secundario: rgb(234, 99, 140); /*rosa*/
+    --color-terciario: rgb(255, 217, 218); /*rosa muy claro*/
+    --color-cuaternario: rgb(48, 52, 63); /*gris*/
+    --color-texto: rgb(27, 32, 33); /*negro*/
 }
 
 /*Animación para el scrolleo suave*/
@@ -31,4 +31,59 @@ html{
     max-width: 1100px;
     margin: 0 auto;
     padding: 0 24px;
+}
+
+/*Color background contenedores - Formulario uniformes personalizados*/
+.contenedor-formulario{
+    max-width: 850px;
+    margin: 50px auto;
+    padding: 35px;
+    background-color: var(--color-terciario);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,.12);
+}
+
+.fila{
+    display:flex;
+    gap:5px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.btn-outline-secondary{
+    --bs-btn-color: var(--color-terciario); 
+    --bs-btn-border-color: var(--color-primario); 
+    --bs-btn-bg: var(--color-primario);
+}
+
+/* Carrousel */
+body {
+	margin: 0;
+}
+
+.marquee {
+	overflow-x: clip;
+	white-space: nowrap;
+	position: relative;
+	width: 100%;
+}
+
+.marquee-inner {
+	display: flex;
+	align-items: center;
+	gap: 2vw;
+	padding: 12vh 0;
+	will-change: transform;
+}
+
+.marquee-inner img {
+	height: 100%;
+	transition: transform 0.5s;
+	flex-shrink: 0;
+	width: 20vw;
+	border-radius: 2rem;
+}
+
+.marquee-inner img:hover {
+	transform: scale(1.03);
 }

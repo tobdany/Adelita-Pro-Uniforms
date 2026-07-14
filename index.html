@@ -4,10 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adelita Pro | Pasión en movimiento</title>
-    <!--Link a la página de estilos-->
-    <link real="stylesheet" href="style.css">
     <!--Link a Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!--Link a la página de estilos-->
+    <link rel="stylesheet" href="style.css">
+    <!--Link tipografías-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Sail&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -32,9 +36,191 @@
         <!---->
     </div>
 
-    <div class="contenedor">
-        <h2>Pide tus uniformes personalizados</h2>
-        <!---->
+    <!--Uniformes personalizados-->
+    <div class="container-lg contenedor-formulario py-5">
+        <h2 class="sail-regular text-center">Pide tus uniformes personalizados</h2>
+        <!--Texto, formulario (color, imagen logo, nombre y número, medidas o talla, número de uniformes)-->
+        <p class="nunito text-center">Personaliza tu entrenamiento con un uniforme hecho exclusivamente para ti</p>
+        <div class="container mt-4">
+    <div class="row">
+        <!--Apelllido del uniforme-->
+        <div class="col-md-6 mb-3">
+            <label for="apellido" class="form-label nunito">
+                Apellido en el uniforme
+            </label>
+            <input type="text" class="form-control" id="apellido">
+        </div>
+        <!--Número del uniforme-->
+        <div class="col-md-6 mb-3">
+            <label for="numero" class="form-label nunito">
+                Número del uniforme
+            </label>
+            <input type="text" class="form-control" id="numero">
+        </div>
+
+    </div>
+    <!--Color sólido del uniforme-->
+    <p class="nunito">Selecciona un color sólido para tu uniforme</p>
+    <select class="form-select">
+        <option value="rosa" class="nunito">Rosa</option>
+        <option value="rojo" class="nunito">Rojo</option>
+        <option value="azul" class="nunito">Azul</option>
+        <option value="amarillo" class="nunito">Amarillo</option>
+        <option value="verde" class="nunito">Verde</option>
+        <option value="negro" class="nunito">Negro</option>
+        <option value="blanco" class="nunito">Blanco</option>
+    </select>
+
+    <!--Color de acento en el uniforme-->
+    <div>
+        <p class="nunito">Elige un color para complementar tu uniforme</p>
+        <div class="form-check form-check-inline">
+        <input class="form-check-input"
+            type="radio"
+            name="color"
+            value="rosa">
+        <label class="form-check-label nunito">
+            Rosa
+        </label>
+        </div>
+
+        <div class="form-check form-check-inline">
+        <input class="form-check-input"
+            type="radio"
+            name="color"
+            value="rojo">
+        <label class="form-check-label nunito">
+            Rojo
+        </label>
+        </div>
+
+        <div class="form-check form-check-inline">
+        <input class="form-check-input"
+            type="radio"
+            name="color"
+            value="azul">
+        <label class="form-check-label nunito">
+            Azul
+        </label>
+        </div>
+
+        <div class="form-check form-check-inline">
+        <input class="form-check-input"
+            type="radio"
+            name="color"
+            value="amarillo">
+        <label class="form-check-label nunito">
+            Amarillo
+        </label>
+        </div>
+
+        <div class="form-check form-check-inline">
+        <input class="form-check-input"
+            type="radio"
+            name="color"
+            value="verde">
+        <label class="form-check-label nunito">
+            Verde
+        </label>
+        </div>
+
+        <div class="form-check form-check-inline">
+        <input class="form-check-input"
+            type="radio"
+            name="color"
+            value="negro">
+        <label class="form-check-label nunito">
+            Negro
+        </label>
+        </div>
+
+        <div class="form-check form-check-inline">
+        <input class="form-check-input"
+            type="radio"
+            name="color"
+            value="blanco">
+        <label class="form-check-label nunito">
+            Blanco
+        </label>
+        </div>
+
+        <div>
+        <!--Subir el logo del equipo-->
+            <div class="mb-3">
+            <label for="formFile" class="form-label nunito">Sube el logo de tu equipo</label>
+            <input class="form-control nunito" type="file" id="formFile" accept="image/*">
+            </div>
+        </div>
+
+        <div>
+            <!--Elegir tallas camisas-->
+            <p class="nunito">Elige la talla de tu camiseta</p>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                <label class="form-check-label nunito" for="inlineCheckbox1">XS</label>
+                </div>
+                <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                <label class="form-check-label nunito" for="inlineCheckbox2">S</label>
+                </div>
+                <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                <label class="form-check-label nunito" for="inlineCheckbox3">M</label>
+                </div>
+                <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option2">
+                <label class="form-check-label nunito" for="inlineCheckbox2">G</label>
+                </div>
+                <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="option2">
+                <label class="form-check-label nunito" for="inlineCheckbox2">XG</label>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <!--Elegir tallas shorts-->
+            <p class="nunito">Elige la talla de tus shorts</p>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                <label class="form-check-label nunito" for="inlineCheckbox1">XS</label>
+                </div>
+                <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                <label class="form-check-label nunito" for="inlineCheckbox2">S</label>
+                </div>
+                <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                <label class="form-check-label nunito" for="inlineCheckbox3">M</label>
+                </div>
+                <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option2">
+                <label class="form-check-label nunito" for="inlineCheckbox2">G</label>
+                </div>
+                <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="option2">
+                <label class="form-check-label nunito" for="inlineCheckbox2">XG</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center">
+            <!--Botón de envío-->
+            <button type="button" class="btn btn-outline-secondary nunito">Ordenar</button>
+        </div>
+
+        <!--Carrousel-->
+        <div class="marquee">
+            <div class="marquee-inner">
+                <img src="Imagenes/fut 4.png">
+                <img src="Imagenes/fut3.png">
+                <img src="Imagenes/vol 3.png">
+                <img src="Imagenes/vol 1.png">
+                <img src="Imagenes/nat 1.png">
+            </div>
+        </div>
+    </div>
+
     </div>
 
     <div class="contenedor">
@@ -48,6 +234,8 @@
     
     <!--Segundo link de bootstrap:-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <!--Link al script de js-->
+    <script src="script.js"></script>
 </body>
 
 </html>
