@@ -10,12 +10,15 @@ menuIcon.addEventListener('click', () => {
 // Evento de scroll
 window.addEventListener('scroll', () => {
     const header = document.querySelector('.adelita-header');
+	const menuIcon = document.querySelector('#menu-icon');
     
     // Aplica la clase según la ubicación
     if (window.scrollY > 55) {
         header.classList.add('cambio-fondo');
+		menuIcon.style.color = 'var(--color-texto)';
     } else {
         header.classList.remove('cambio-fondo');
+		menuIcon.style.color = '#ffffff';
     }
 });
 
