@@ -73,7 +73,7 @@ body {
 
 .adelita-header.cambio-fondo {
     position: fixed;
-    background: var(--color-primario);
+    background: var(--color-texto);
     /* Borde sutil */
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     /*Hace el borde más delgado*/
